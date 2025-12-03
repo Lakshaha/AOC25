@@ -33,9 +33,9 @@ def check_crossing(direction, newpos, oldpos, size, val):
     full_wrap = val // size
     partial_wrap = 0
 
-    if (direction == 'L' and newpos > oldpos):
+    if (direction == 'R' and newpos > oldpos):
         partial_wrap = 1
-    if (direction == 'R' and newpos < oldpos):
+    if (direction == 'L' and newpos < oldpos):
         partial_wrap = 1
 
     return full_wrap + partial_wrap
