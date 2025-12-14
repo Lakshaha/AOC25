@@ -1,5 +1,5 @@
 import re, itertools
-import z3
+import z3 # pyright: ignore[reportMissingImports]
 
 
 
